@@ -1,4 +1,39 @@
-# carlos' dotfiles
+# strangemonad's dotfiles
+
+Forked from caarlos0/dotfiles.
+
+## Installation
+
+### Dependencies
+
+First, make sure you have all those things installed:
+
+- `git`: to clone the repo
+- `curl`: to download some stuff
+- `tar`: to extract downloaded stuff
+- `zsh`: to actually run the dotfiles
+- `sudo`: some configs may need that
+
+### Install
+
+To setup 
+
+To clone the repo, run these steps:
+
+```console
+$ cd PATH_TO_SOURCE_CODE
+$ git clone https://github.com/strangemonad/dotfiles.git 
+$ cd dotfiles
+$ ./script/bootstrap
+$ zsh # or just close and open your terminal again.
+```
+
+
+# Additional installs
+- kube-ps1
+
+
+## Original caarlos0/dotfiles readme
 
 [![Build Status][tb]][tp]
 [![Powered by Antibody][ab]][ap]

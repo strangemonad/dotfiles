@@ -7,11 +7,15 @@
 	gi = grep --break --heading --line-number -i
 	changed = show --pretty=\"format:\" --name-only
 	fm = fetch-merge
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    lg = !"git lg1"
+    lsu = ls-files --others --exclude-standard
+	lt = log --tags --decorate --simplify-by-decoration --oneline
 	pr = open-pr
 	please = push --force-with-lease
 	commend = commit --amend --no-edit
 	fpr = fetch-pr
-	lt = log --tags --decorate --simplify-by-decoration --oneline
 [color]
 	diff = auto
 	status = auto
@@ -19,7 +23,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
+	editor = code -w
 	compression = -1
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab
